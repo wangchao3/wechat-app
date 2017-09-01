@@ -1,0 +1,41 @@
+<view class="top-tab flex-wrp flex-tab">
+    <view class="toptab flex-item {{currentNavtab==idx ? 'active' : ''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:for-item="itemName" data-idx="{{idx}}" wx:key="{{idx}}" bindtap="switchTab">
+    {{itemName}}
+    </view>
+</view>
+
+<scroll-view scroll-y="true" class="container list withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view class="ctnt0">
+        <block wx:for="{{items}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="{{idx}}">
+            <a class="item">
+                <view class="item-block">
+                    <view class="item_header">
+                        <view class="list-title">{{item.projectName ? item.projectName : item.assignmentName}}</view>
+                    </view>
+                    <view class="item_body text-center">
+                        <view class="infoItem profit">
+                            <view class="color-yellow">
+                                {{item.loanRate ? item.loanRate : item.assignmentRate}}%
+                            </view>
+                            <view>年化收益</view>
+                        </view>
+                        <view class="infoItem releaseTime">
+                            <view class="color-black">
+                                {{item.loanTerm}}{{item.loanTermFlagName}}
+                            </view>
+                            <view>项目时间</view>
+                        </view>
+                        <view class="infoItem investNow">
+                            <view class="btn btn-info btn-radius btn-sm">
+                                查看详情
+                            </view>
+                            <view>
+                                {{item.paymentMethodName}}
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </a>
+        </block>
+    </view>
+</scroll-view>

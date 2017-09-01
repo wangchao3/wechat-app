@@ -1,0 +1,48 @@
+{
+    "pages": [
+        "pages/list/list",
+        "pages/index/index",
+        "pages/discovery/discovery",
+        "pages/chat/chat",
+        "pages/more/more",
+        "pages/answer/answer",
+        "pages/question/question"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#FDA300",
+        "navigationBarTitleText": "精融汇",
+        "navigationBarTextStyle": "white",
+        "enablePullDownRefresh": true
+    },
+    "tabBar": {
+        "color": "#626567",
+        "selectedColor": "#0068C4",
+        "backgroundColor": "#FBFBFB",
+        "borderStyle": "white",
+        "list": [{
+                "pagePath": "pages/index/index",
+                "text": "首页",
+                "iconPath": "images/index.png",
+                "selectedIconPath": "images/index_focus.png"
+            },
+            {
+                "pagePath": "pages/list/list",
+                "text": "投资",
+                "iconPath": "images/ring.png",
+                "selectedIconPath": "images/ring_focus.png"
+            },
+            {
+                "pagePath": "pages/more/more",
+                "text": "账户",
+                "iconPath": "images/burger.png",
+                "selectedIconPath": "images/burger_focus.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 10000,
+        "downloadFile": 10000
+    },
+    "debug": true
+}
