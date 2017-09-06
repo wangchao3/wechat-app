@@ -1,0 +1,92 @@
+<view class="container detail">
+    <view class="text-center top-item">
+        <text class="block">{{info.projectInfo.projectName}}</text>
+        <text class="block size-big mt10">{{info.projectInfo.loanRate}}%</text>
+        <text class="block size-sm mb10">年化利率</text>
+        <view class="mb20 size-sm">
+            <text wx:if="{{info.projectInfo.isNewProject}}" class="border">新人专享</text>
+            <text wx:if="{{info.projectInfo.autoInvestFlag}} == 1" class="border">自动投标</text>
+            <text wx:if="{{info.projectInfo.assignmentFlag}} == 1" class="border">可以转让</text>
+            <text wx:if="{{info.projectInfo.isVipProject}}" class="border">预约</text>
+        </view>
+        <view class="item_body">
+            <view class="infoItem">
+                <text class="size-sm">项目期限</text>
+                <text class="color-white">{{info.projectInfo.loanTerm}}{{info.projectInfo.loanTermFlagName}}</text>
+            </view>
+            <view class="infoItem">
+                <text class="size-sm">起投金额(元)</text>
+                <text class="color-white">{{info.projectInfo.investStartAmt/100}}</text>
+            </view>
+            <view class="infoItem">
+                <text class="size-sm">项目总额(元)</text>
+                <text class="color-white">{{info.projectInfo.loanAmount/100}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="list-group">
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">还款方式</text>
+            </view>
+            <text class="item-des">{{info.projectInfo.paymentMethodName}}</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">募集截止日</text>
+            </view>
+            <text class="item-des">{{info.projectInfo.endTime}}</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">起息时间</text>
+            </view>
+            <text class="item-des">项目满标放款后的第二天</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">逾期赔付时效</text>
+            </view>
+            <text class="item-des">到期后3个工作日内</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">借款信息</text>
+            </view>
+            <text class="item-des">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">投资记录</text>
+            </view>
+            <text class="item-des">已有{{info.userInvestmentList.length}}人投资</text>
+        </view>
+        <view class="list-item">
+            <view class="item-image">
+                <image src="../../images/burger.png" />
+            </view>
+            <view class="item-title">
+                <text class="size-sm">风险提示</text>
+            </view>
+            <text class="item-des">点击查看</text>
+        </view>
+    </view>
+</view>

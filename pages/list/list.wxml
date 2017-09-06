@@ -4,38 +4,28 @@
     </view>
 </view>
 
-<scroll-view scroll-y="true" class="container list withtab" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+<scroll-view scroll-y="true" class="container list withtab" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
     <view class="ctnt0">
         <block wx:for="{{items}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}" wx:key="{{idx}}">
-            <a class="item">
+            <view class="item">
                 <view class="item-block">
-                    <view class="item_header">
-                        <view class="list-title">{{item.projectName ? item.projectName : item.assignmentName}}</view>
-                    </view>
-                    <view class="item_body text-center">
+                    <view class="item_header">{{item.projectName ? item.projectName : item.assignmentName}}</view>
+                    <view class="item_body">
                         <view class="infoItem profit">
-                            <view class="color-yellow">
-                                {{item.loanRate ? item.loanRate : item.assignmentRate}}%
-                            </view>
-                            <view>年化收益</view>
+                            <text class="color-yellow">{{item.loanRate ? item.loanRate : item.assignmentRate}}%</text>
+                            <text>年化收益</text>
                         </view>
                         <view class="infoItem releaseTime">
-                            <view class="color-black">
-                                {{item.loanTerm}}{{item.loanTermFlagName}}
-                            </view>
-                            <view>项目时间</view>
+                            <text class="color-black">{{item.loanTerm}}{{item.loanTermFlagName}}</text>
+                            <text>项目时间</text>
                         </view>
-                        <view class="infoItem investNow">
-                            <view class="btn btn-info btn-radius btn-sm">
-                                查看详情
-                            </view>
-                            <view>
-                                {{item.paymentMethodName}}
-                            </view>
+                        <view class="infoItem investNow text-center">
+                            <button size="mini" bindtap="gotoDetail" data-id="{{item.projectId}}">查看详情</button>
+                            <text>{{item.paymentMethodName}}</text>
                         </view>
                     </view>
                 </view>
-            </a>
+            </view>
         </block>
     </view>
 </scroll-view>

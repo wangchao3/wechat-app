@@ -8,14 +8,27 @@ Page({
         count: 1
     },
 
+    //事件处理函数
+    gotoDetail: function(e){
+        console.log(e);
+        wx.navigateTo({
+          url: '../detail/detail?id='+e.currentTarget.dataset.id
+        })
+    },
+
+    bind: function(event){
+        wx.navigateTo({
+            url: "pages/logs/logs"
+        })
+    },
+
     onLoad: function () {
         this.getData();
     },
 
     switchTab: function(e) {
-        console.log(e.currentTarget.dataset.idx);
         this.setData({
-            currentNavtab: e.currentTarget.dataset.idx
+            currentNavtab: e.currentTarget.dataset.idx,
         });
         this.getData(e.currentTarget.dataset.idx, 1, 10);
     },
@@ -31,7 +44,6 @@ Page({
         }
         let that = this;
         util.getData(list_api).then(function(res) {
-            console.log(res.data.content);
             that.setData({
                 items: res.data.content.array ? res.data.content.array : res.data.content.assignmentList,
             })
@@ -41,7 +53,6 @@ Page({
     upper: function() {
         wx.showNavigationBarLoading()
         this.refresh();
-        console.log("upper");
         setTimeout(function() {
             wx.hideNavigationBarLoading();
             wx.stopPullDownRefresh();
@@ -54,7 +65,6 @@ Page({
             wx.hideNavigationBarLoading();
             that.nextLoad();
         }, 1000);
-        console.log("lower")
     },
 
     refresh: function() {
@@ -63,8 +73,6 @@ Page({
             icon: 'loading',
             duration: 3000
         });
-
-        console.log("loaddata");
         this.setData({
             items: [],
         });
@@ -76,7 +84,6 @@ Page({
                 duration: 2000
             })
         }, 3000)
-
     },
 
     nextLoad: function() {
@@ -86,8 +93,6 @@ Page({
             duration: 4000
         });
         this.data.count++;
-        console.log("continueload");
-        console.log(this.data.count);
         this.getData(this.data.currentNavtab, this.data.count, 10);
 
         setTimeout(function() {

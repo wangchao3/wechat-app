@@ -1,4 +1,5 @@
 /**app.wxss**/
+/* @import 'weui.wxss'; */
 .container {
   height: 100%;
   display: flex;
@@ -156,6 +157,28 @@
 .btn-sm {
   font-size: 12px;
 }
+.btn-center {
+  width: 100rpx;
+  margin: 0 auto;
+}
 .text-center {
   text-align: center;
+}
+.mt20 {
+  margin-top: 30rpx;
+}
+.mb10 {
+  margin-bottom: 15rpx;
+}
+.mb20 {
+  margin-bottom: 30rpx;
+}
+.mt10 {
+  margin-top: 10rpx;
+}
+.size-big {
+  font-size: 30px;
+}
+.size-sm {
+  font-size: 12px;
 }

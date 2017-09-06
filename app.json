@@ -1,12 +1,11 @@
 {
     "pages": [
-        "pages/list/list",
         "pages/index/index",
-        "pages/discovery/discovery",
-        "pages/chat/chat",
+        "pages/list/list",
         "pages/more/more",
         "pages/answer/answer",
-        "pages/question/question"
+        "pages/question/question",
+        "pages/detail/detail"
     ],
     "window": {
         "backgroundTextStyle": "light",
