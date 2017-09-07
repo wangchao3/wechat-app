@@ -26,64 +26,50 @@
     </view>
     <view class="list-group">
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-iconziti41"></text>
                 <text class="size-sm">还款方式</text>
             </view>
             <text class="item-des">{{info.projectInfo.paymentMethodName}}</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-date"></text>
                 <text class="size-sm">募集截止日</text>
             </view>
             <text class="item-des">{{info.projectInfo.endTime}}</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-qxr"></text>
                 <text class="size-sm">起息时间</text>
             </view>
             <text class="item-des">项目满标放款后的第二天</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-yuqi"></text>
                 <text class="size-sm">逾期赔付时效</text>
             </view>
             <text class="item-des">到期后3个工作日内</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-yonghutianchong"></text>
                 <text class="size-sm">借款信息</text>
             </view>
             <text class="item-des">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-jilu"></text>
                 <text class="size-sm">投资记录</text>
             </view>
             <text class="item-des">已有{{info.userInvestmentList.length}}人投资</text>
         </view>
         <view class="list-item">
-            <view class="item-image">
-                <image src="../../images/burger.png" />
-            </view>
             <view class="item-title">
+                <text class="iconfont icon-yuqi"></text>
                 <text class="size-sm">风险提示</text>
             </view>
             <text class="item-des">点击查看</text>

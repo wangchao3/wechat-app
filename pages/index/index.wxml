@@ -10,6 +10,7 @@
     </view>
     <view class="news">
         <text class="title">公告</text>
+        <text class="iconfont icon-anquan"></text>
         <text class="content">的方式发生</text>
     </view>
     <view class="item mt20">
