@@ -30,7 +30,7 @@
                 <text class="iconfont icon-iconziti41"></text>
                 <text class="size-sm">还款方式</text>
             </view>
-            <text class="item-des">{{info.projectInfo.paymentMethodName}}</text>
+            <navigator class="item-des" url="/pages/static/paymentMethod?title=navigate" hover-class="navigator-hover">{{info.projectInfo.paymentMethodName}}</navigator>
         </view>
         <view class="list-item">
             <view class="item-title">

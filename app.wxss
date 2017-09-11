@@ -8,9 +8,11 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  /*padding: 200rpx 0;*/
   box-sizing: border-box;
   background: #F0F4F3;
+  padding: 0;
+  font-size: 24rpx;
+  color: #000;
 }
 
 .container.withtab{
@@ -45,11 +47,6 @@
 .toptab.active{
   color: #ffffff;
   border-bottom: solid 2px #ffffff;
-}
-.container{
-  padding: 0;
-  font-size: 14rpx;
-  color: #000;
 }
 .container .feed-item{
   width: 690rpx;

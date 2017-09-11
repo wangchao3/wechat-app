@@ -30,12 +30,6 @@
     border-radius: 20rpx;
     margin: 10rpx;
 }
-image {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-top: 5px;
-}
 .list-group {
     width: 100%;
     background-color: #FFFFFF;
@@ -111,6 +105,7 @@ image {
     position: relative;
     text-align: right;
     color: #999;
+    font-size: 20rpx;
 }
 .item-des:after {
     content: " ";

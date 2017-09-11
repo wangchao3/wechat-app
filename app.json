@@ -1,8 +1,9 @@
 {
     "pages": [
+        "pages/static/paymentMethod",
         "pages/index/index",
         "pages/list/list",
-        "pages/more/more",
+        "pages/home/home",
         "pages/answer/answer",
         "pages/question/question",
         "pages/detail/detail"
@@ -32,7 +33,7 @@
                 "selectedIconPath": "images/ring_focus.png"
             },
             {
-                "pagePath": "pages/more/more",
+                "pagePath": "pages/home/home",
                 "text": "账户",
                 "iconPath": "images/burger.png",
                 "selectedIconPath": "images/burger_focus.png"
