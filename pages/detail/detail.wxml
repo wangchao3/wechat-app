@@ -30,7 +30,7 @@
                 <text class="iconfont icon-iconziti41"></text>
                 <text class="size-sm">还款方式</text>
             </view>
-            <navigator class="item-des" url="/pages/static/paymentMethod?title=navigate" hover-class="navigator-hover">{{info.projectInfo.paymentMethodName}}</navigator>
+            <navigator class="item-des child-page" url="/pages/static/paymentMethod" hover-class="navigator-hover">{{info.projectInfo.paymentMethodName}}</navigator>
         </view>
         <view class="list-item">
             <view class="item-title">
@@ -58,21 +58,21 @@
                 <text class="iconfont icon-yonghutianchong"></text>
                 <text class="size-sm">借款信息</text>
             </view>
-            <text class="item-des">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</text>
+            <text class="item-des child-page">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</text>
         </view>
         <view class="list-item">
             <view class="item-title">
                 <text class="iconfont icon-jilu"></text>
                 <text class="size-sm">投资记录</text>
             </view>
-            <text class="item-des">已有{{info.userInvestmentList.length}}人投资</text>
+            <navigator class="item-des child-page" url="/pages/static/investlist?id={{info.projectInfo.projectId}}" hover-class="navigator-hover">已有{{info.userInvestmentList.length}}人投资</navigator>
         </view>
         <view class="list-item">
             <view class="item-title">
                 <text class="iconfont icon-yuqi"></text>
                 <text class="size-sm">风险提示</text>
             </view>
-            <text class="item-des">点击查看</text>
+            <text class="item-des child-page">点击查看</text>
         </view>
     </view>
 </view>

@@ -181,3 +181,6 @@
 .size-sm {
   font-size: 12px;
 }
+.yellow {
+  color: #FDA300;
+}

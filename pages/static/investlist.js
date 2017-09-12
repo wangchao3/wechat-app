@@ -6,6 +6,7 @@ Page({
     },
 
     onLoad: function (e) {
+        console.log(e);
         this.getData(e.id);
     },
 
@@ -17,7 +18,7 @@ Page({
             res.data.content.projectInfo.endTime = util.formatTime(res.data.content.projectInfo.endTime);
             that.setData({
                 info: res.data.content,
-            })
+            });
         });
     }
 })

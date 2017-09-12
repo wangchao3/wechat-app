@@ -107,7 +107,7 @@
     color: #999;
     font-size: 20rpx;
 }
-.item-des:after {
+.child-page:after {
     content: " ";
     display: inline-block;
     height: 6px;

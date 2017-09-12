@@ -1,12 +1,13 @@
 {
     "pages": [
-        "pages/static/paymentMethod",
         "pages/index/index",
         "pages/list/list",
         "pages/home/home",
         "pages/answer/answer",
         "pages/question/question",
-        "pages/detail/detail"
+        "pages/detail/detail",
+        "pages/static/investlist",
+        "pages/static/paymentMethod"
     ],
     "window": {
         "backgroundTextStyle": "light",
