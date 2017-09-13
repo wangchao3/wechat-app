@@ -1,0 +1,16 @@
+.risks {
+  font-size: 28rpx;
+  padding: 28rpx;
+}
+.item {
+  margin-bottom: 30rpx;
+}
+.item text {
+  display: block;
+  margin-bottom: 10rpx;
+}
+.title {
+  font-size: 32rpx;
+  margin-bottom: 30rpx;
+  display: block;
+}

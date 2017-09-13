@@ -1,0 +1,35 @@
+.paymentInfo {
+  padding: 28rpx;
+  font-size: 28rpx;
+}
+.item {
+  margin-bottom: 28rpx;
+}
+.title {
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 10rpx;
+  color: #FDA300;
+}
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.td {
+  width:80%;
+  justify-content: center;
+  text-align: left;
+}
+.th {
+  width: 20%;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+}
+.iconfont {
+  font-size: 28rpx;
+  display: block;
+  margin-bottom: 5rpx;
+}

@@ -12,20 +12,7 @@
         <text class="title">公告</text>
         <text class="content">的方式发生</text>
     </view>
-    <view class="section">
-        <view class="section__title">时间选择器</view>
-        <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
-            <view class="picker">
-                当前选择: {{time}}
-            </view>
-        </picker>
-    </view>
-    <view class="section">
-        <view class="section__title">省市区选择器</view>
-        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
-            <view class="picker">当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}</view>
-        </picker>
-    </view>
+
     <view class="item mt20">
         <view class="item-block">
             <view class="item_header">精选网贷</view>

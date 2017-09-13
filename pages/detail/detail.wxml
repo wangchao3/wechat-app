@@ -58,7 +58,7 @@
                 <text class="iconfont icon-yonghutianchong"></text>
                 <text class="size-sm">借款信息</text>
             </view>
-            <text class="item-des child-page">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</text>
+            <navigator class="item-des child-page" url="/pages/static/paymentInfo?id={{info.projectInfo.projectId}}" hover-class="navigator-hover">{{info.loanUser.personName}}/{{info.loanUser.age}}/{{info.loanUser.cityName}}</navigator>
         </view>
         <view class="list-item">
             <view class="item-title">
@@ -72,7 +72,7 @@
                 <text class="iconfont icon-yuqi"></text>
                 <text class="size-sm">风险提示</text>
             </view>
-            <text class="item-des child-page">点击查看</text>
+            <navigator class="item-des child-page" url="/pages/static/risks" hover-class="navigator-hover">点击查看</navigator>
         </view>
     </view>
 </view>

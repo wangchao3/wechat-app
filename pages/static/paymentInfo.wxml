@@ -1,0 +1,33 @@
+<view class="paymentInfo">
+    <view class="item">
+        <text class="title">项目信息</text>
+        <text>{{info.loanUser.loanDesc}}</text>
+    </view>
+    <view class="item">
+        <text class="title">借款人信息</text>
+        <view class="tr">
+            <text class="th">借款人</text>
+            <text class="td">{{info.loanUser.personName}}</text>
+        </view>
+        <view class="tr">
+            <text class="th">年龄</text>
+            <text class="td">{{info.loanUser.age}}</text>
+        </view>
+        <view class="tr">
+            <text class="th">所在地</text>
+            <text class="td">{{info.loanUser.cityName}}</text>
+        </view>
+        <view class="tr">
+            <text class="th">收入情况</text>
+            <text class="td">{{info.loanUser.income/100}}</text>
+        </view>
+    </view>
+    <view class="item">
+        <text class="title">相关证件</text>
+        <text class="iconfont icon-duigou">已通过身份证审核</text>
+        <text class="iconfont icon-duigou">已通过信用报告审核</text>
+        <text class="iconfont icon-duigou">已通过工作证明审核</text>
+        <text class="iconfont icon-duigou">已通过资产证明审核</text>
+        <text class="iconfont icon-duigou">已通过保险公司核保结果表审核</text>
+    </view>
+</view>
