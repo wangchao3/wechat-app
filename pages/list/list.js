@@ -46,7 +46,7 @@ Page({
         util.getData(list_api).then(function(res) {
             that.setData({
                 items: res.data.content.array ? res.data.content.array : res.data.content.assignmentList,
-            })
+            });
         });
     },
 
@@ -58,6 +58,7 @@ Page({
             wx.stopPullDownRefresh();
         }, 2000);
     },
+
     lower: function(e) {
         wx.showNavigationBarLoading();
         var that = this;
@@ -77,13 +78,6 @@ Page({
             items: [],
         });
         this.getData(this.data.currentNavtab, 1, 10);
-        setTimeout(function() {
-            wx.showToast({
-                title: '刷新成功',
-                icon: 'success',
-                duration: 2000
-            })
-        }, 3000)
     },
 
     nextLoad: function() {
@@ -93,14 +87,25 @@ Page({
             duration: 4000
         });
         this.data.count++;
-        this.getData(this.data.currentNavtab, this.data.count, 10);
-
-        setTimeout(function() {
+        let list_api = 'https://m.iafclub.com/jrrest/investments?pageNo='+this.data.count+'&pageSize=10';
+        if (this.currentNavtab === 1) {
+            list_api = 'https://m.iafclub.com/jrrest/assignments?pageNo='+this.data.count+'&pageSize=10';
+        }
+        let that = this;
+        let oldArray = this.data.items;
+        util.getData(list_api).then(function(res) {
+            console.log(res.data.content.array);
+            let newArray = res.data.content.array;
+            console.log(newArray);
+            that.setData({
+                items: oldArray.concat(newArray),
+            });
+            console.log(oldArray);
             wx.showToast({
                 title: '加载成功',
                 icon: 'success',
                 duration: 2000
-            })
-        }, 3000);
+            });
+        });
     }
 })

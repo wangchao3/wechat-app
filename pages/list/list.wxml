@@ -11,15 +11,15 @@
                 <view class="item-block">
                     <view class="item_header">{{item.projectName ? item.projectName : item.assignmentName}}</view>
                     <view class="item_body">
-                        <view class="infoItem profit">
+                        <view class="infoItem">
                             <text class="color-yellow">{{item.loanRate ? item.loanRate : item.assignmentRate}}%</text>
                             <text>年化收益</text>
                         </view>
-                        <view class="infoItem releaseTime">
+                        <view class="infoItem">
                             <text class="color-black">{{item.loanTerm}}{{item.loanTermFlagName}}</text>
                             <text>项目时间</text>
                         </view>
-                        <view class="infoItem investNow text-center">
+                        <view class="infoItem text-center">
                             <button size="mini" bindtap="gotoDetail" data-id="{{item.projectId}}">查看详情</button>
                             <text>{{item.paymentMethodName}}</text>
                         </view>

@@ -12,21 +12,41 @@
         <text class="title">公告</text>
         <text class="content">的方式发生</text>
     </view>
+    <view class="items">
+        <view class="cell">
+            <view class="left">
+                <text class="iconfont icon-huodongzhongxin"></text>
+            </view>
+            <view class="right">
+                <text class="block">活动中心</text>
+                <text class="block">热情参加活动呀</text>
+            </view>
+        </view>
+        <view class="cell">
+            <view class="left">
+                <text class="iconfont icon-yaoqinghaoyou"></text>
+            </view>
+            <view class="right">
+                <text class="block">邀请好友</text>
+                <text class="block">快去邀请好友啊</text>
+            </view>
+        </view>
+    </view>
 
     <view class="item mt20">
         <view class="item-block">
             <view class="item_header">精选网贷</view>
-            <view class="mb10">{{item.projectName}}</view>
+            <view class="mb10 size-normal">{{item.projectName}}</view>
             <view class="item_body">
-                <view class="infoItem profit">
+                <view class="infoItem">
                     <text class="color-yellow">{{item.loanRate}}%</text>
                     <text>年化收益</text>
                 </view>
-                <view class="infoItem releaseTime">
+                <view class="infoItem">
                     <text class="color-black">{{item.loanTerm}}{{item.loanTermFlagName}}</text>
                     <text>项目时间</text>
                 </view>
-                <view class="infoItem investNow text-center">
+                <view class="infoItem text-center">
                     <button size="mini" bindtap="gotoDetail" data-id="{{item.projectId}}">查看详情</button>
                     <text>{{item.paymentMethodName}}</text>
                 </view>
