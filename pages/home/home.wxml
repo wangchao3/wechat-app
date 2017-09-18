@@ -1,72 +1,96 @@
-
 <view class="container more">
-  <view class="user flex-wrp">
-    <view class="avatar flex-item">
-      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="user flex-wrp">
+        <view class="avatar flex-item">
+            <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" wx:if="{{userInfo.avatarUrl}}"></image>
+        </view>
+        <view class="user-info flex-item">
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+            <text class="edit">查看或编辑个人主页</text>
+        </view>
     </view>
-    <view class="user-info flex-item">
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-      <text class="edit">查看或编辑个人主页</text>
-    </view>
-  </view>
-
-  <view class="my">
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/eye.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的关注</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/star.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的收藏</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/draft.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的草稿</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/recent.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>最近浏览</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/book.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的书架</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/live.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的 Live</text>
-      </view>
-    </view>
-    <view class="my-item flex-wrp">
-      <view class="myitem-icon flex-item" >
-        <image src="../../images/zhi.png"></image>
-      </view>
-      <view class="myitem-name flex-item">
-        <text>我的值乎</text>
-      </view>
+    <view class="my">
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-wangdai-"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>我的网贷</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-dingqi"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>我的定期</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-baoxian1"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>我的保险</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-cunqianguan"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>我的存钱罐</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-012xiangmuxiangqingtianjiakezhuanrangbiaoshi"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>债权转让</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-zidongtixianshezhi01"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>自动投标设置</text>
+            </view>
+        </view>
     </view>
 
-  </view>
+    <view class="my">
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-0007"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>优惠券</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-yaoqingma1"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>我的邀请</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-guanyu"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <text>关于我们</text>
+            </view>
+        </view>
+        <view class="my-item flex-wrp">
+            <view class="myitem-icon flex-item iconfont-item">
+                <text class="iconfont icon-wenti"></text>
+            </view>
+            <view class="myitem-name flex-item">
+                <navigator class="item-des child-page" url="/pages/static/risks" hover-class="navigator-hover">常见问题</navigator>
+            </view>
+        </view>
+    </view>
 </view>

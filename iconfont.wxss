@@ -102,7 +102,11 @@
 
 .icon-naozhong:before { content: "\e617"; }
 
+.icon-012xiangmuxiangqingtianjiakezhuanrangbiaoshi:before { content: "\e66e"; }
+
 .icon-shimingrenzheng:before { content: "\e602"; }
+
+.icon-zidongtixianshezhi01:before { content: "\e65c"; }
 
 .icon-gerenzhongxin:before { content: "\e63b"; }
 
@@ -123,6 +127,8 @@
 .icon-kulian:before { content: "\e630"; }
 
 .icon-guanzhu:before { content: "\e63c"; }
+
+.icon-0007:before { content: "\e669"; }
 
 .icon-qq-copy:before { content: "\e634"; }
 
@@ -176,6 +182,8 @@
 
 .icon-huodongzhongxin:before { content: "\e6b3"; }
 
+.icon-yaoqingma1:before { content: "\e73d"; }
+
 .icon-anquan:before { content: "\e657"; }
 
 .icon-bangzhu:before { content: "\e658"; }
@@ -184,11 +192,21 @@
 
 .icon-yuqi:before { content: "\e659"; }
 
+.icon-wangdai-:before { content: "\e65d"; }
+
 .icon-zhanghu:before { content: "\e67d"; }
 
 .icon-qxr:before { content: "\e69c"; }
 
+.icon-guanyu:before { content: "\e660"; }
+
+.icon-dingqi:before { content: "\e705"; }
+
+.icon-baoxian1:before { content: "\e65e"; }
+
 .icon-yaoqinghaoyou:before { content: "\e65b"; }
+
+.icon-cunqianguan:before { content: "\e65f"; }
 
 .icon-icon-test:before { content: "\e629"; }
 
@@ -199,5 +217,7 @@
 .icon-home-safety:before { content: "\e653"; }
 
 .icon-home-trusteeship:before { content: "\e654"; }
+
+.icon-wenti:before { content: "\e661"; }
 
 .icon-jieqian:before { content: "\e656"; }

@@ -14,12 +14,10 @@ App({
             typeof cb == "function" && cb(this.globalData.userInfo);
         }else{
             //调用登录接口
-            console.log('222');
             wx.login({
                 success: function () {
                     wx.getUserInfo({
                         success: function (res) {
-                            console.log(res);
                             that.globalData.userInfo = res.userInfo;
                             typeof cb == "function" && cb(that.globalData.userInfo);
                         }

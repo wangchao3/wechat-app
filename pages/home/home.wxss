@@ -31,7 +31,6 @@
   color: #bababa;
   line-height: 34rpx;
 }
-
 .my{
   margin: 15rpx 0 0 0;
   border-top: solid 1px #ebebeb;
@@ -61,4 +60,11 @@
 }
 .my .my-item:last-child .myitem-name{
   border-bottom: none;
+}
+.iconfont-item {
+  line-height: 60rpx;
+  padding: 30rpx 0;
+}
+.iconfont {
+  font-size: 50rpx;
 }
